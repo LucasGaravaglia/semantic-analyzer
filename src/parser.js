@@ -3,7 +3,7 @@ const { writeFile } = require("./file");
 /**
  * Classe que simula o analisador sintático.
  */
-class parser{
+class parser {
   /**
    * Construtor da classe parser
    * @param {Object} syntacticTable Tabela sintática
@@ -11,61 +11,85 @@ class parser{
    */
   constructor() {
     this.syntacticTable = {
-    "<STA>": [
-      ["tokenConditional", "tokenStartFunction", "<EXP>", "tokenFinalFunction", "<STA>"],
-      ["tokenStartBlockFunction", "<STA>", "tokenFinalBlockFunction","<STA>"],
-      ["tokenWhile", "tokenStartFunction", "<EXP>", "tokenFinalFunction", "<STA>"],
-      ["tokenReturn","<EXP>", "tokenEndLine","<STA>"],
-      ["tokenIdentifier", "<K>", "tokenEndLine","<STA>"],
-      ["tokenDataType","tokenIdentifier", "<L>","<STA>"],
-      ["tokenUnsigned", "tokenDataType","tokenIdentifier", "<L>","<STA>"],
-      ["tokenTypeDef", "tokenDataType", "tokenIdentifier", "tokenEndLine", "<STA>"],
-      ["$"],
-      
-    ],
-    "<T>": [
-      ["tokenAssignments", "<EXP>"],
-      ["tokenSeparator", "tokenIdentifier", "<T>"],
+      "<STA>": [
+        [
+          "tokenConditional",
+          "tokenStartFunction",
+          "<EXP>",
+          "tokenFinalFunction",
+          "<STA>",
+        ],
+        [
+          "tokenStartBlockFunction",
+          "<STA>",
+          "tokenFinalBlockFunction",
+          "<STA>",
+        ],
+        [
+          "tokenWhile",
+          "tokenStartFunction",
+          "<EXP>",
+          "tokenFinalFunction",
+          "<STA>",
+        ],
+        ["tokenReturn", "<EXP>", "tokenEndLine", "<STA>"],
+        ["tokenIdentifier", "<K>", "tokenEndLine", "<STA>"],
+        ["tokenDataType", "tokenIdentifier", "<L>", "<STA>"],
+        ["tokenUnsigned", "tokenDataType", "tokenIdentifier", "<L>", "<STA>"],
+        [
+          "tokenTypeDef",
+          "tokenDataType",
+          "tokenIdentifier",
+          "tokenEndLine",
+          "<STA>",
+        ],
+        ["$"],
       ],
-    "<L>": [
+      "<T>": [
+        ["tokenAssignments", "<EXP>"],
+        ["tokenSeparator", "tokenIdentifier", "<T>"],
+      ],
+      "<L>": [
         ["tokenStartFunction", "<P>", "tokenFinalFunction"],
-        ["<T>","tokenEndLine"],
+        ["<T>", "tokenEndLine"],
       ],
-    "<EXP>": [
-      ["tokenIdentifier", "<S>"],
-      ["tokenStartFunction", "<EXP>", "tokenFinalFunction"],
-      ["tokenNumber","<S>"],
-    ],
-    "<K>": [
-      ["tokenAssignments", "<EXP>"],
-      ["tokenStartFunction","tokenIdentifier","<B>","tokenFinalFunction"],
-    ],
-    "<B>": [
-      ["tokenSeparator", "tokenIdentifier", "<B>"],
-      ["$"],
-    ],
-    "<S>": [
-      ["tokenOperator", "<EXP>"],
-      ["tokenExpression", "<EXP>"],
-      ["$"],
-    ],
-    "<F>": [
-      ["tokenDataType","tokenIdentifier", "tokenStartFunction","<P>","tokenFinalFunction","<STA>"],
-      ["tokenUnsigned","tokenIdentifier","tokenDataType", "tokenStartFunction","<P>","tokenFinalFunction","<STA>"],
-      ["$"],
-    ],
-    "<P>": [
-      ["tokenDataType", "tokenIdentifier","<Z>"],
-      ["$"],
-    ],
-    "<P>": [
-      ["tokenSeparator", "tokenIdentifier","<Z>"],
-      ["$"],
-    ],
-    "<TD>": [
-      ["tokenTypeDef", "tokenDataType","tokenIdentifier","tokenEndLine"],
-    ]
-    }
+      "<EXP>": [
+        ["tokenIdentifier", "<S>"],
+        ["tokenStartFunction", "<EXP>", "tokenFinalFunction"],
+        ["tokenNumber", "<S>"],
+      ],
+      "<K>": [
+        ["tokenAssignments", "<EXP>"],
+        ["tokenStartFunction", "tokenIdentifier", "<B>", "tokenFinalFunction"],
+      ],
+      "<B>": [["tokenSeparator", "tokenIdentifier", "<B>"], ["$"]],
+      "<S>": [["tokenOperator", "<EXP>"], ["tokenExpression", "<EXP>"], ["$"]],
+      "<F>": [
+        [
+          "tokenDataType",
+          "tokenIdentifier",
+          "tokenStartFunction",
+          "<P>",
+          "tokenFinalFunction",
+          "<STA>",
+        ],
+        [
+          "tokenUnsigned",
+          "tokenIdentifier",
+          "tokenDataType",
+          "tokenStartFunction",
+          "<P>",
+          "tokenFinalFunction",
+          "<STA>",
+        ],
+        ["$"],
+      ],
+      "<P>": [["tokenDataType", "tokenIdentifier", "<Z>"], ["$"]],
+      "<Z>": [["tokenSeparator", "tokenIdentifier", "<Z>"], ["$"]],
+      "<TD>": [
+        ["tokenTypeDef", "tokenDataType", "tokenIdentifier", "tokenEndLine"],
+      ],
+    };
     this.pilha = [];
   }
   /**
@@ -73,7 +97,7 @@ class parser{
    * @param {Array} vet Vetor de token para a derivação da cadeia.
    */
   stackUp(vet) {
-    for (let i = vet.length-1; i >= 0; i--){
+    for (let i = vet.length - 1; i >= 0; i--) {
       this.pilha.push(vet[i]);
     }
   }
@@ -82,38 +106,37 @@ class parser{
    * Método responsável pela logica do analisador sintático.
    * @param {Array} tokenList Vetor de token que sera analisado pelo analisador sintático.
    */
-  process(tokenList,path) {
+  process(tokenList, path) {
     let message = "";
     this.pilha.push("<STA>");
     let state;
     let temp = [];
     let file = "";
-    let erro=0;
     while (tokenList[0] != undefined || this.pilha[0] != undefined) {
       temp = [];
       tokenList.map((item) => {
-        temp.unshift(item)
-      })
-      // tempFileOutPut ={ Lista: temp, pilha: this.pilha };
-      file = `${file} Lista de símbolos :`
+        temp.unshift(item);
+      });
+      file = `${file} Lista de símbolos :`;
       temp.map((item) => {
-        file = `${file} ${item}`
-      })
-      file = `${file} \n`
-      file = `${file} Pilha             :`
+        file = `${file} ${item}`;
+      });
+      file = `${file} \n`;
+      file = `${file} Pilha             :`;
       this.pilha.map((item) => {
-        file = `${file} ${item}`
-      })
-      file = `${file} \n\n`
+        file = `${file} ${item}`;
+      });
+      file = `${file} \n\n`;
       state = this.pilha[this.pilha.length - 1];
       this.pilha.pop();
-      if ((/<[a-z]*>/i).test(state)) {
+      console.log(state);
+      if (/<[a-z]*>/i.test(state)) {
         for (let i = 0; i < this.syntacticTable[state].length; i++) {
           if (this.syntacticTable[state][i][0] == tokenList[0]) {
-            this.stackUp(this.syntacticTable[state][i])
+            this.stackUp(this.syntacticTable[state][i]);
             break;
-          } else if ((/<[a-z]*>/i).test(this.syntacticTable[state][i][0])) {
-            this.stackUp(this.syntacticTable[state][i])
+          } else if (/<[a-z]*>/i.test(this.syntacticTable[state][i][0])) {
+            this.stackUp(this.syntacticTable[state][i]);
             break;
           }
         }
@@ -121,18 +144,18 @@ class parser{
         if (state != tokenList[0]) {
           message = "Erros na analise sintática";
           break;
-        }else{
+        } else {
           tokenList.shift();
         }
       }
     }
 
     if (message) {
-      console.log(message)
+      console.log(message);
     } else {
-      console.log("Sem erros sintáticos.")
+      console.log("Sem erros sintáticos.");
     }
-    path = `arvore_${path}`
+    path = `arvore_${path}`;
     writeFile(path, file);
   }
 }

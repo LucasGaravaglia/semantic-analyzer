@@ -16,10 +16,9 @@ const {
   operatorClass,
   endLineClass,
   separatorClass,
-  typeDefClass
+  typeDefClass,
 } = require("./tokenClass");
-const {parser} = require("./parser")
-
+const { parser } = require("./parser");
 
 var symbolTable = [];
 
@@ -96,7 +95,7 @@ function scanner(path) {
         for (let i = 0; i < tokens.length; i++) {
           if (automaton(tokens[i].states).execute(data[j])) {
             valid = true;
-            symbolTable.push({symbol: data[j],token:tokens[i].name});
+            symbolTable.push({ symbol: data[j], token: tokens[i].name });
             break;
           }
         }
@@ -104,7 +103,7 @@ function scanner(path) {
           lexicalError += `Erro na linha [${line + 1}], '${
             data[j]
           }' ${automaton().getError()}\n`; //Identifica o erro, se houve, do processamento do token
-          symbolTable.push({symbol: data[j],token:"error"});
+          symbolTable.push({ symbol: data[j], token: "error" });
         }
         valid = false;
       }
@@ -124,7 +123,8 @@ scanner(path);
 let tokenList = [];
 symbolTable.map((pos) => {
   tokenList.push(pos.token);
-})
+});
+console.table(tokenList);
 tokenList.push("$");
-pars.process(tokenList,path);
+pars.process(tokenList, path);
 readline.question();

@@ -1,12 +1,12 @@
 <STA> ::= tokenConditional tokenStartFunction<EXP>tokenFinalFunction<STA> 
-            | tokenStartBlockFunction<STA>tokenFinalBlockFunction<STA>
-            | tokenWhile tokenStartFunction<EXP>tokenFinalFunction<STA>
-            | tokenReturn<EXP>tokenEndLine<STA>
-            | tokenIdentifier<K>tokenEndLine<STA>
-            | tokenDataType tokenIdentifier <L> <STA>
-            | tokenUnsigned tokenDataType tokenIdentifier <L> <STA>
-            | tokenTypeDef tokenDataType tokenIdentifier tokenEndLine<STA>
-            | $
+          | tokenStartBlockFunction<STA>tokenFinalBlockFunction<STA>
+          | tokenWhile tokenStartFunction<EXP>tokenFinalFunction<STA>
+          | tokenReturn<EXP>tokenEndLine<STA>
+          | tokenIdentifier<K>tokenEndLine<STA>
+          | tokenDataType tokenIdentifier <L> <STA>
+          | tokenUnsigned tokenDataType tokenIdentifier <L> <STA>
+          | tokenTypeDef tokenDataType tokenIdentifier tokenEndLine<STA>
+          | $
 
 <T> ::= tokenAssignments<EXP>
         | tokenSeparator tokenIdentifier<T>
