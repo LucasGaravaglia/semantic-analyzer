@@ -1,16 +1,12 @@
 typedef int batata;
-
 int f(int entrada) {
   return entrada;
 }
-
 int main() {
   int a = 0;
-  int c, g, b;
-
+  int c,g,b,k;
   if (c == g) {
-    return 1;
+    return k;
   }
-
   return 0;
 }

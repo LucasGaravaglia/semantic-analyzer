@@ -1,24 +1,24 @@
-<STA> ::= tokenConditional tokenStartFunction<EXPFUNC>
-          | tokenStartBlockFunction<ENDBLOCK>
-          | tokenWhile tokenStartFunction<EXPFUNC>
+<STA> ::= tokenConditional tokenStartFunction<EXPFUNC>          {Novo escopo}
+          | tokenStartBlockFunction<STA><ENDBLOCK>
+          | tokenWhile tokenStartFunction<EXPFUNC>              {Novo escopo}
           | tokenReturn<EXP>tokenEndLine<STA>
           | tokenIdentifier<K>tokenEndLine<STA>
-          | tokenDataType <DECVAR>
-          | tokenUnsigned tokenDataType <DECVAR>
-          | tokenTypeDef tokenDataType tokenIdentifier tokenEndLine<STA>
+          | tokenDataType <DECFUNC>
+          | tokenUnsigned tokenDataType <DECFUNC>
+          | tokenTypeDef <TD> <STA>
           | $
 
-<ENDBLOCK> ::= <STA>tokenFinalBlockFunction<STA>
+<ENDBLOCK> ::= <STA>tokenFinalBlockFunction                     {Final escopo}
 
-<EXPFUNC> ::= <EXP>tokenFinalFunction<STA>
+<EXPFUNC> ::= <EXP>tokenFinalFunction tokenStartBlockFunction<STA><ENDBLOCK>
 
 <T> ::= tokenAssignments<EXP>
         | tokenSeparator tokenIdentifier<T>
 
-<L> ::= tokenStartFunction<P>tokenFinalFunction
+<L> ::= tokenStartFunction<P>tokenFinalFunction                 {Novo escopo}
         |<T>tokenEndLine
 
-<DECVAR> ::= tokenIdentifier <L> <STA>
+<DECFUNC> ::= tokenIdentifier <L> <STA>
 
 <EXP> ::= tokenIdentifier<S>
           | tokenStartFunction<EXP>tokenFinalFunction 
@@ -40,4 +40,4 @@
 <Z> ::= tokenSeparator tokenIdentifier<Z>
         | $
 
-<TD> ::= tokenTypeDef tokenDataType tokenIdentifier tokenEndLine
+<TD> ::= tokenDataType tokenIdentifier tokenEndLine

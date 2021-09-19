@@ -19,6 +19,7 @@ const {
   typeDefClass,
 } = require("./tokenClass");
 const { parser } = require("./parser");
+const { verifyDeclaration } = require("./semantic");
 
 var symbolTable = [];
 
@@ -80,7 +81,10 @@ const tokens = [
   identifierClass(),
 ];
 
+var listLines = [];
+
 function scanner(path) {
+  let listLinesTemp = [];
   try {
     const dataFile = readFile(path); //Le o arquivo e recebe um vetor de string, cada posição do vetor sendo uma linha do arquivo
     let data;
@@ -96,6 +100,7 @@ function scanner(path) {
           if (automaton(tokens[i].states).execute(data[j])) {
             valid = true;
             symbolTable.push({ symbol: data[j], token: tokens[i].name });
+            listLinesTemp.push({ symbol: data[j], token: tokens[i].name })
             break;
           }
         }
@@ -107,6 +112,8 @@ function scanner(path) {
         }
         valid = false;
       }
+      listLines.push(listLinesTemp);
+      listLinesTemp = [];
     }
     console.log(lexicalError);
     console.log("Concluído !");
@@ -125,9 +132,14 @@ let tempSymbolTable = [];
 symbolTable.map((item) => {
   tempSymbolTable.push(item);
 });
-let escopoList = pars.process(tempSymbolTable, path);
-for (let i = 0; i < symbolTable.length; i++)
-  symbolTable[i].escopo = escopoList[i];
-console.table(symbolTable);
+const list = pars.process(tempSymbolTable, path);
+for (let i = 0; i < symbolTable.length; i++){
+  symbolTable[i].escopo = list.escopoList[i];
+  symbolTable[i].dataType = list.dataTypeList[i];
+  symbolTable[i].status = list.status[i];
+}
+verifyDeclaration(symbolTable);
+// console.log(listLines);
+// console.table(symbolTable);
 
 readline.question();
