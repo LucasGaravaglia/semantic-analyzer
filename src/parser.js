@@ -97,6 +97,7 @@ class parser {
     let dataTypeList = [];
     let status = [];
     let lastToken = "";
+    let lastSymbol = "";
     let message = "";
     this.pilha.push("<STA>");
     let state;
@@ -135,25 +136,36 @@ class parser {
         }
       } else {
         if (state != tokenList[0].token) {
-          message = "Erros na analise sintática";
+          message = `Erro na linha [${tokenList[0].line}] na analise sintática, token esperado: ${state}.`;
           break;
         } else {
-          if (state == "tokenIdentifier" || state == "tokenDataType") {
+          if (state == "tokenNumber") {
             dataTypeList.push("int");
-          } else {
+          }else if (state == "tokenDataType") {
+            dataTypeList.push(tokenList[0].symbol);
+          } else if (state == "tokenIdentifier" && (lastToken == "tokenDataType" || lastToken == "tokenSeparator")) {
+            let tempItemT;
+            dataTypeList.map(item => {
+              if (item != undefined) {
+                tempItemT = item;
+              }
+            })
+            dataTypeList.push(tempItemT);
+          }else{
             dataTypeList.push(undefined);
           }
           if (state == "tokenIdentifier" && (lastToken == "tokenDataType" || lastToken == "tokenSeparator") ) {
             status.push("declaration")
           }else if (state == "tokenIdentifier" && this.pilha[this.pilha.length - 1] == "tokenAssignments") {
             status.push("assignment")
-          } else if ((state == "tokenIdentifier" ) ) {
+          } else if ((state == "tokenIdentifier")){
             status.push("usage")
           } else {
             status.push("not defined")
           }
           escopoList.push(this.escopo);
           lastToken = state;
+          lastSymbol = tokenList[0].symbol;
           tokenList.shift();
         }
       }

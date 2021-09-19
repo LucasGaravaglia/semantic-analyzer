@@ -1,0 +1,6 @@
+Lista de símbolos : error tokenDataType tokenIdentifier tokenEndLine tokenDataType tokenIdentifier tokenStartFunction tokenFinalFunction tokenStartBlockFunction tokenDataType tokenIdentifier tokenAssignments error tokenEndLine tokenDataType tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenEndLine tokenReturn tokenNumber tokenEndLine tokenFinalBlockFunction $
+Pilha             : <STA> 
+
+Lista de símbolos : error tokenDataType tokenIdentifier tokenEndLine tokenDataType tokenIdentifier tokenStartFunction tokenFinalFunction tokenStartBlockFunction tokenDataType tokenIdentifier tokenAssignments error tokenEndLine tokenDataType tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenEndLine tokenReturn tokenNumber tokenEndLine tokenFinalBlockFunction $
+Pilha             : 
+

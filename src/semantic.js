@@ -12,7 +12,7 @@ const verifyDeclaration = (symbolTable) => {
         }
       }
       if (flag) {
-        console.log("Variável "+ symbolTable[i].symbol + " nao declarada.")
+        console.log(`Variável '${symbolTable[i].symbol}' sendo usada na linha [${symbolTable[i].line}] sem ser declarada.`)
       } else {
         flag = true;
       }
@@ -20,7 +20,4 @@ const verifyDeclaration = (symbolTable) => {
   }
 }
 
-const verifyAssignmentDataType = () => {
-  
-}
 module.exports = { verifyDeclaration };

@@ -1,0 +1,8 @@
+type@def int batata;
+
+int main() {
+  int a = 0z;
+  int c,g,b,k;
+ 
+  return 0;
+}

@@ -81,10 +81,8 @@ const tokens = [
   identifierClass(),
 ];
 
-var listLines = [];
 
 function scanner(path) {
-  let listLinesTemp = [];
   try {
     const dataFile = readFile(path); //Le o arquivo e recebe um vetor de string, cada posição do vetor sendo uma linha do arquivo
     let data;
@@ -99,24 +97,20 @@ function scanner(path) {
         for (let i = 0; i < tokens.length; i++) {
           if (automaton(tokens[i].states).execute(data[j])) {
             valid = true;
-            symbolTable.push({ symbol: data[j], token: tokens[i].name });
-            listLinesTemp.push({ symbol: data[j], token: tokens[i].name })
+            symbolTable.push({ symbol: data[j], token: tokens[i].name , line: line+1});
             break;
           }
         }
         if (!valid) {
-          lexicalError += `Erro na linha [${line + 1}], '${
+          lexicalError += `Erro na linha [${line + 1}] na analise léxica, '${
             data[j]
-          }' ${automaton().getError()}\n`; //Identifica o erro, se houve, do processamento do token
+          }' ${automaton().getError()}.`; //Identifica o erro, se houve, do processamento do token
           symbolTable.push({ symbol: data[j], token: "error" });
         }
         valid = false;
       }
-      listLines.push(listLinesTemp);
-      listLinesTemp = [];
     }
     console.log(lexicalError);
-    console.log("Concluído !");
   } catch (err) {
     console.log("Erro ao abrir o arquivo.");
     console.log(err);
@@ -139,7 +133,6 @@ for (let i = 0; i < symbolTable.length; i++){
   symbolTable[i].status = list.status[i];
 }
 verifyDeclaration(symbolTable);
-// console.log(listLines);
 // console.table(symbolTable);
 
 readline.question();

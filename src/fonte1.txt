@@ -8,5 +8,7 @@ int main() {
   if (c == g) {
     return k;
   }
+  f(c);
+  c = b + 10;
   return 0;
 }
