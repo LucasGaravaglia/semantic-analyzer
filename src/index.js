@@ -120,11 +120,14 @@ const pars = new parser();
 const path = readline.question("Digite o caminho do arquivo: ");
 console.clear();
 scanner(path);
-let tokenList = [];
-symbolTable.map((pos) => {
-  tokenList.push(pos.token);
+symbolTable.push({ symbol: "$", token: "$" });
+let tempSymbolTable = [];
+symbolTable.map((item) => {
+  tempSymbolTable.push(item);
 });
-console.table(tokenList);
-tokenList.push("$");
-pars.process(tokenList, path);
+let escopoList = pars.process(tempSymbolTable, path);
+for (let i = 0; i < symbolTable.length; i++)
+  symbolTable[i].escopo = escopoList[i];
+console.table(symbolTable);
+
 readline.question();

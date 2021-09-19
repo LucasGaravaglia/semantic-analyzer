@@ -1,261 +1,285 @@
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenDataType tokenStartFunction tokenIdentifier tokenDataType tokenEndLine tokenIdentifier tokenDataType tokenTypeDef 
- Pilha             : <STA> 
+ Pilha             : undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenDataType tokenStartFunction tokenIdentifier tokenDataType tokenEndLine tokenIdentifier tokenDataType tokenTypeDef 
- Pilha             : <STA> tokenEndLine tokenIdentifier tokenDataType tokenTypeDef 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenDataType tokenStartFunction tokenIdentifier tokenDataType tokenEndLine tokenIdentifier tokenDataType 
- Pilha             : <STA> tokenEndLine tokenIdentifier tokenDataType 
+ Pilha             : undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenDataType tokenStartFunction tokenIdentifier tokenDataType tokenEndLine tokenIdentifier 
- Pilha             : <STA> tokenEndLine tokenIdentifier 
+ Pilha             : undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenDataType tokenStartFunction tokenIdentifier tokenDataType tokenEndLine 
- Pilha             : <STA> tokenEndLine 
+ Pilha             : undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenDataType tokenStartFunction tokenIdentifier tokenDataType 
- Pilha             : <STA> 
+ Pilha             : undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenDataType tokenStartFunction tokenIdentifier tokenDataType 
- Pilha             : <STA> <L> tokenIdentifier tokenDataType 
+ Pilha             : undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenDataType tokenStartFunction tokenIdentifier 
- Pilha             : <STA> <L> tokenIdentifier 
+ Pilha             : undefined 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenDataType tokenStartFunction tokenIdentifier 
+ Pilha             : undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenDataType tokenStartFunction 
- Pilha             : <STA> <L> 
+ Pilha             : undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenDataType tokenStartFunction 
- Pilha             : <STA> tokenFinalFunction <P> tokenStartFunction 
+ Pilha             : undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenDataType 
- Pilha             : <STA> tokenFinalFunction <P> 
+ Pilha             : undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenDataType 
- Pilha             : <STA> tokenFinalFunction <Z> tokenIdentifier tokenDataType 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier 
- Pilha             : <STA> tokenFinalFunction <Z> tokenIdentifier 
+ Pilha             : undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn tokenStartBlockFunction tokenFinalFunction 
- Pilha             : <STA> tokenFinalFunction <Z> 
+ Pilha             : undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn tokenStartBlockFunction tokenFinalFunction 
- Pilha             : <STA> tokenFinalFunction 
+ Pilha             : undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn tokenStartBlockFunction 
- Pilha             : <STA> 
+ Pilha             : undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn tokenStartBlockFunction 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenStartBlockFunction 
+ Pilha             : undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn 
- Pilha             : <STA> tokenFinalBlockFunction <STA> 
+ Pilha             : undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <EXP> tokenReturn 
+ Pilha             : undefined undefined undefined 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier tokenReturn 
+ Pilha             : undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <EXP> 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine tokenIdentifier 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <S> tokenIdentifier 
+ Pilha             : undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <S> 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction tokenEndLine 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine 
+ Pilha             : undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction 
- Pilha             : <STA> tokenFinalBlockFunction <STA> 
+ Pilha             : undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenFinalBlockFunction 
- Pilha             : <STA> tokenFinalBlockFunction 
+ Pilha             : undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType 
- Pilha             : <STA> 
+ Pilha             : undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType 
- Pilha             : <STA> <L> tokenIdentifier tokenDataType 
+ Pilha             : undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier 
- Pilha             : <STA> <L> tokenIdentifier 
+ Pilha             : undefined 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier 
+ Pilha             : undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction 
- Pilha             : <STA> <L> 
+ Pilha             : undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction 
- Pilha             : <STA> tokenFinalFunction <P> tokenStartFunction 
+ Pilha             : undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction 
- Pilha             : <STA> tokenFinalFunction <P> 
+ Pilha             : undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction 
- Pilha             : <STA> tokenFinalFunction 
+ Pilha             : undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction 
- Pilha             : <STA> 
+ Pilha             : undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenStartBlockFunction 
+ Pilha             : undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType 
- Pilha             : <STA> tokenFinalBlockFunction <STA> 
+ Pilha             : undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType 
- Pilha             : <STA> tokenFinalBlockFunction <STA> <L> tokenIdentifier tokenDataType 
+ Pilha             : undefined undefined undefined 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType 
+ Pilha             : undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier 
- Pilha             : <STA> tokenFinalBlockFunction <STA> <L> tokenIdentifier 
+ Pilha             : undefined undefined undefined 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments tokenIdentifier 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments 
- Pilha             : <STA> tokenFinalBlockFunction <STA> <L> 
+ Pilha             : undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <T> 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber tokenAssignments 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <EXP> tokenAssignments 
+ Pilha             : undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <EXP> 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine tokenNumber 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <S> tokenNumber 
+ Pilha             : undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <S> 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType tokenEndLine 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine 
+ Pilha             : undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType 
- Pilha             : <STA> tokenFinalBlockFunction <STA> 
+ Pilha             : undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier tokenDataType 
- Pilha             : <STA> tokenFinalBlockFunction <STA> <L> tokenIdentifier tokenDataType 
+ Pilha             : undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier 
- Pilha             : <STA> tokenFinalBlockFunction <STA> <L> tokenIdentifier 
+ Pilha             : undefined undefined undefined 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator tokenIdentifier 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator 
- Pilha             : <STA> tokenFinalBlockFunction <STA> <L> 
+ Pilha             : undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <T> 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier tokenSeparator 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <T> tokenIdentifier tokenSeparator 
+ Pilha             : undefined undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator tokenIdentifier 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <T> tokenIdentifier 
+ Pilha             : undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <T> 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier tokenSeparator 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <T> tokenIdentifier tokenSeparator 
+ Pilha             : undefined undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine tokenIdentifier 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <T> tokenIdentifier 
+ Pilha             : undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <T> 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional tokenEndLine 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine 
+ Pilha             : undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional 
- Pilha             : <STA> tokenFinalBlockFunction <STA> 
+ Pilha             : undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction tokenConditional 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction <EXP> tokenStartFunction tokenConditional 
+ Pilha             : undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction <EXP> tokenStartFunction 
+ Pilha             : undefined undefined undefined 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier tokenStartFunction 
+ Pilha             : undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction <EXP> 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression tokenIdentifier 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction <S> tokenIdentifier 
+ Pilha             : undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction <S> 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier tokenExpression 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction <EXP> tokenExpression 
+ Pilha             : undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction <EXP> 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenIdentifier 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction <S> tokenIdentifier 
+ Pilha             : undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction <S> 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction 
+ Pilha             : undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction 
- Pilha             : <STA> tokenFinalBlockFunction <STA> 
+ Pilha             : undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalBlockFunction <STA> tokenStartBlockFunction 
+ Pilha             : undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalBlockFunction <STA> 
+ Pilha             : undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalBlockFunction <STA> tokenEndLine <EXP> tokenReturn 
+ Pilha             : undefined undefined undefined undefined undefined 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn 
+ Pilha             : undefined undefined undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalBlockFunction <STA> tokenEndLine <EXP> 
+ Pilha             : undefined undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalBlockFunction <STA> tokenEndLine <S> tokenNumber 
+ Pilha             : undefined undefined undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalBlockFunction <STA> tokenEndLine <S> 
+ Pilha             : undefined undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalBlockFunction <STA> tokenEndLine 
+ Pilha             : undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalBlockFunction <STA> 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalBlockFunction 
+ Pilha             : undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn 
- Pilha             : <STA> tokenFinalBlockFunction <STA> 
+ Pilha             : undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <EXP> tokenReturn 
+ Pilha             : undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <EXP> 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <S> tokenNumber 
+ Pilha             : undefined undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <S> 
+ Pilha             : undefined undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine 
- Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine 
+ Pilha             : undefined undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction 
- Pilha             : <STA> tokenFinalBlockFunction <STA> 
+ Pilha             : undefined undefined undefined 
 
  Lista de símbolos : $ tokenFinalBlockFunction 
- Pilha             : <STA> tokenFinalBlockFunction 
+ Pilha             : undefined undefined 
 
  Lista de símbolos : $ 
- Pilha             : <STA> 
+ Pilha             : undefined 
 
  Lista de símbolos : $ 
- Pilha             : $ 
+ Pilha             : undefined 
 
