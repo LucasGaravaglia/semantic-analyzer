@@ -1,43 +1,43 @@
-<STA> ::= tokenConditional tokenStartFunction<EXPFUNC>          
-          | tokenStartBlockFunction<STA><ENDBLOCK>
-          | tokenWhile tokenStartFunction<EXPFUNC>              
+<STA> ::= tokenConditional tokenStartFunction<EXPFUNC>
+          | tokenStartBlockFunction<STA><ENDBLOCK>      {Definição do escopo}
+          | tokenWhile tokenStartFunction<EXPFUNC>
           | tokenReturn<EXP>tokenEndLine<STA>
-          | tokenIdentifier<K>tokenEndLine<STA>
+          | tokenIdentifier<K>tokenEndLine<STA>         {Atribuição de tipo}
           | tokenDataType <DECFUNC>
           | tokenUnsigned tokenDataType <DECFUNC>
           | tokenTypeDef <TD> <STA>
           | $
 
-<ENDBLOCK> ::= <STA>tokenFinalBlockFunction                    
+<ENDBLOCK> ::= <STA>tokenFinalBlockFunction             {Definição do escopo}
 
-<EXPFUNC> ::= <EXP>tokenFinalFunction tokenStartBlockFunction<STA><ENDBLOCK>
+<EXPFUNC> ::= <EXP>tokenFinalFunction tokenStartBlockFunction<STA><ENDBLOCK>    {Definição do escopo}
 
 <T> ::= tokenAssignments<EXP>
-        | tokenSeparator tokenIdentifier<T>
+        | tokenSeparator tokenIdentifier<T>             {Atribuição de tipo}
 
-<L> ::= tokenStartFunction<P>tokenFinalFunction                 
+<L> ::= tokenStartFunction<P>tokenFinalFunction
         |<T>tokenEndLine
 
-<DECFUNC> ::= tokenIdentifier <L> <STA>
+<DECFUNC> ::= tokenIdentifier <L> <STA>                 {Atribuição de tipo}
 
-<EXP> ::= tokenIdentifier<S>
-          | tokenStartFunction<EXP>tokenFinalFunction 
-          | tokenNumber<S>
+<EXP> ::= tokenIdentifier<S>                            {Atribuição de tipo}
+          | tokenStartFunction<EXP>tokenFinalFunction
+          | tokenNumber<S>                              {Atribuição de tipo}
 
 <K> ::= tokenAssignments<EXP>
-        | tokenStartFunction tokenIdentifier<B>tokenFinalFunction 
+        | tokenStartFunction tokenIdentifier<B>tokenFinalFunction       {Atribuição de tipo}
 
-<B> ::= tokenSeparator tokenIdentifier<B>
+<B> ::= tokenSeparator tokenIdentifier<B>               {Atribuição de tipo}
         | $
 
 <S> ::= tokenOperator<EXP>
         | tokenExpression<EXP>
         | $
 
-<P> ::= tokenDataType tokenIdentifier<Z>
+<P> ::= tokenDataType tokenIdentifier<Z>                {Atribuição de tipo}
         | $
 
-<Z> ::= tokenSeparator tokenDataType tokenIdentifier<Z>
+<Z> ::= tokenSeparator tokenDataType tokenIdentifier<Z> {Atribuição de tipo}
         | $
 
-<TD> ::= tokenDataType tokenIdentifier tokenEndLine
+<TD> ::= tokenDataType tokenIdentifier tokenEndLine     {Atribuição de tipo}

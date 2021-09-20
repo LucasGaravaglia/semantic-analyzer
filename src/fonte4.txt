@@ -1,15 +1,15 @@
 typedef int batata;
-int f(int entrada) {
-  return entrada;
+int f(int soma1,int soma2) {
+  return soma1+soma2;
 }
 int main() {
   int a = 0;
   int c,b,k;
-  f(c,b);
-  if (c == g) {
-    return k;
+  f(c);
+  if (c == z) {
+    return k
   }
-  f(c)
+  b = 15;
   c = b + 10;
   return 0@;
 }

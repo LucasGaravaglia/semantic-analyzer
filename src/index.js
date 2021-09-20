@@ -140,10 +140,12 @@ for (let i = 0; i < symbolTable.length; i++){
   symbolTable[i].dataType = list.dataTypeList[i];
   symbolTable[i].status = list.status[i];
 }
-
-if (!(verifyDeclaration(symbolTable) || verifyTypeAssignment(symbolTable) || verifyParametersFunction(symbolTable))) {
+let flag = false;
+flag = flag | verifyDeclaration(symbolTable);
+flag = flag | verifyTypeAssignment(symbolTable);
+flag = flag | verifyParametersFunction(symbolTable);
+if (!flag) {
   console.log("Sem erros semânticos.")
 }
-// console.table(symbolTable);
 
 readline.question();

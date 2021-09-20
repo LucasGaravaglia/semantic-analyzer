@@ -66,6 +66,7 @@ const verifyParametersFunction = (symbolTable) => {
           parameters.push(symbolTable[j].dataType);
         }
       }
+
       for (let j = 0; j < i; j++){
         if (symbolTable[j].symbol == symbolTable[i].symbol && symbolTable[j + 1].token == "tokenStartFunction") {
           for (let k = j; k < i; k++){
