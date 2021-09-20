@@ -5,6 +5,7 @@ int f(int entrada) {
 int main() {
   int a = 0;
   int c,b,k;
+  f(c,b);
   if (c == g) {
     return k;
   }

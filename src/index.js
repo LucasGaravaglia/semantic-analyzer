@@ -19,7 +19,7 @@ const {
   typeDefClass,
 } = require("./tokenClass");
 const { parser } = require("./parser");
-const { verifyDeclaration, verifyTypeAssignment } = require("./semantic");
+const { verifyDeclaration, verifyTypeAssignment, verifyParametersFunction } = require("./semantic");
 
 var symbolTable = [];
 
@@ -141,7 +141,7 @@ for (let i = 0; i < symbolTable.length; i++){
   symbolTable[i].status = list.status[i];
 }
 
-if (!(verifyDeclaration(symbolTable) || verifyTypeAssignment(symbolTable))) {
+if (!(verifyDeclaration(symbolTable) || verifyTypeAssignment(symbolTable) || verifyParametersFunction(symbolTable))) {
   console.log("Sem erros semânticos.")
 }
 // console.table(symbolTable);

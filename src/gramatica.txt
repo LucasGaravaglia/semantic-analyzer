@@ -1,6 +1,6 @@
-<STA> ::= tokenConditional tokenStartFunction<EXPFUNC>          {Novo escopo}
+<STA> ::= tokenConditional tokenStartFunction<EXPFUNC>          
           | tokenStartBlockFunction<STA><ENDBLOCK>
-          | tokenWhile tokenStartFunction<EXPFUNC>              {Novo escopo}
+          | tokenWhile tokenStartFunction<EXPFUNC>              
           | tokenReturn<EXP>tokenEndLine<STA>
           | tokenIdentifier<K>tokenEndLine<STA>
           | tokenDataType <DECFUNC>
@@ -8,14 +8,14 @@
           | tokenTypeDef <TD> <STA>
           | $
 
-<ENDBLOCK> ::= <STA>tokenFinalBlockFunction                     {Final escopo}
+<ENDBLOCK> ::= <STA>tokenFinalBlockFunction                    
 
 <EXPFUNC> ::= <EXP>tokenFinalFunction tokenStartBlockFunction<STA><ENDBLOCK>
 
 <T> ::= tokenAssignments<EXP>
         | tokenSeparator tokenIdentifier<T>
 
-<L> ::= tokenStartFunction<P>tokenFinalFunction                 {Novo escopo}
+<L> ::= tokenStartFunction<P>tokenFinalFunction                 
         |<T>tokenEndLine
 
 <DECFUNC> ::= tokenIdentifier <L> <STA>
@@ -37,7 +37,7 @@
 <P> ::= tokenDataType tokenIdentifier<Z>
         | $
 
-<Z> ::= tokenSeparator tokenIdentifier<Z>
+<Z> ::= tokenSeparator tokenDataType tokenIdentifier<Z>
         | $
 
 <TD> ::= tokenDataType tokenIdentifier tokenEndLine

@@ -67,7 +67,7 @@ class parser {
         {syntaticRules:["$"]},
       ],
       "<Z>": [
-        {syntaticRules:["tokenSeparator", "tokenIdentifier", "<Z>"]},
+        {syntaticRules:["tokenSeparator", "tokenDataType", "tokenIdentifier", "<Z>"]},
         {syntaticRules:["$"]},
       ],
       "<TD>": [
@@ -93,6 +93,8 @@ class parser {
    * @param {Array} tokenList Vetor de token que sera analisado pelo analisador sintático.
    */
   process(tokenList, path) {
+    let col = 0;
+    let lastColl = 0;
     let escopoList = [];
     let dataTypeList = [];
     let status = [];
@@ -119,6 +121,12 @@ class parser {
       file = `${file} \n\n`;
       state = this.pilha[this.pilha.length - 1];
       this.pilha.pop();
+      if (tokenList[0].line == lastColl) {
+        col++;
+      } else {
+        lastColl = tokenList[0].line;
+        col = 0;
+      }
       if (/<[a-z]*>/i.test(state)) {
         for (let i = 0; i < this.syntacticTable[state].length; i++) {
           if (this.syntacticTable[state][i].syntaticRules[0] == tokenList[0].token) {
@@ -135,7 +143,7 @@ class parser {
         }
       } else {
         if (state != tokenList[0].token) {
-          message = `Erro na linha [${tokenList[0].line}] na analise sintática, token esperado: ${state}.`;
+          message = `Erro na linha [${tokenList[0].line}] coluna [${col}] na analise sintática, token esperado: ${state}.`;
           break;
         } else {
           if (state == "tokenNumber") {
@@ -160,7 +168,7 @@ class parser {
           } else if ((state == "tokenIdentifier")){
             status.push("usage")
           } else {
-            status.push("not defined")
+            status.push(undefined)
           }
           escopoList.push(this.escopo);
           lastToken = state;
