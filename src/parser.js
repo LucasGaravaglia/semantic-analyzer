@@ -97,7 +97,6 @@ class parser {
     let dataTypeList = [];
     let status = [];
     let lastToken = "";
-    let lastSymbol = "";
     let message = "";
     this.pilha.push("<STA>");
     let state;
@@ -165,7 +164,6 @@ class parser {
           }
           escopoList.push(this.escopo);
           lastToken = state;
-          lastSymbol = tokenList[0].symbol;
           tokenList.shift();
         }
       }

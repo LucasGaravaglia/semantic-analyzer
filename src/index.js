@@ -19,7 +19,7 @@ const {
   typeDefClass,
 } = require("./tokenClass");
 const { parser } = require("./parser");
-const { verifyDeclaration } = require("./semantic");
+const { verifyDeclaration, verifyTypeAssignment } = require("./semantic");
 
 var symbolTable = [];
 
@@ -81,12 +81,16 @@ const tokens = [
   identifierClass(),
 ];
 
-
+/**
+ * Função que lê o arquivo, faz análise léxica e começa a montar a tabela de símbolos.
+ * @param {String} path Caminho do arquivo que será processado.
+ */
 function scanner(path) {
   try {
     const dataFile = readFile(path); //Le o arquivo e recebe um vetor de string, cada posição do vetor sendo uma linha do arquivo
     let data;
     let lexicalError = "";
+    let flagError = false;
     for (let line = 0; line < dataFile.length; line++) {
       console.log(line + 1, " ", dataFile[line]);
       data = process(dataFile[line]); //Separa a string em um vetor de tokens
@@ -97,20 +101,24 @@ function scanner(path) {
         for (let i = 0; i < tokens.length; i++) {
           if (automaton(tokens[i].states).execute(data[j])) {
             valid = true;
-            symbolTable.push({ symbol: data[j], token: tokens[i].name , line: line+1});
+            symbolTable.push({ symbol: data[j], token: tokens[i].name, line: line + 1 });
             break;
           }
         }
         if (!valid) {
-          lexicalError += `Erro na linha [${line + 1}] na analise léxica, '${
-            data[j]
-          }' ${automaton().getError()}.`; //Identifica o erro, se houve, do processamento do token
+          flagError = true;
+          lexicalError += `Erro na linha [${line + 1}] na analise léxica, '${data[j]
+            }' ${automaton().getError()}.`; //Identifica o erro, se houve, do processamento do token
           symbolTable.push({ symbol: data[j], token: "error" });
         }
         valid = false;
       }
     }
-    console.log(lexicalError);
+    if (flagError) {
+      console.log(lexicalError);
+    } else {
+      console.log("Sem erros léxicos.");
+    }
   } catch (err) {
     console.log("Erro ao abrir o arquivo.");
     console.log(err);
@@ -132,7 +140,10 @@ for (let i = 0; i < symbolTable.length; i++){
   symbolTable[i].dataType = list.dataTypeList[i];
   symbolTable[i].status = list.status[i];
 }
-verifyDeclaration(symbolTable);
+
+if (!(verifyDeclaration(symbolTable) || verifyTypeAssignment(symbolTable))) {
+  console.log("Sem erros semânticos.")
+}
 // console.table(symbolTable);
 
 readline.question();
